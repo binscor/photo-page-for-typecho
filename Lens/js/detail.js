@@ -41,9 +41,9 @@ $(document).ready(function(){
         for (var i = 0; i < contents.length; i++) {
             if (contents[i].Key != "travel/" + photoName + "/") {
                 datas[j] = Array();
-                datas[j][0] = 'a';
-                datas[j][1] = 'b';
-                datas[j][2] = url + contents[i].Key + "?imageMogr2/format/webp";
+                datas[j][0] = ' ';
+                datas[j][1] = ' ';
+                datas[j][2] = url + contents[i].Key;
                 j++;
             }
         }
@@ -55,10 +55,10 @@ $(document).ready(function(){
             parent.appendChild(article);
             var a = document.createElement("a");
             a.className = "thumbnail";
-            a.href = datas[i][2];
+            a.href = datas[i][2] + "?imageMogr2/format/webp";
             article.appendChild(a);
             var img = document.createElement("img");
-            img.src = datas[i][2] + "";
+            img.src = datas[i][2] + "?imageMogr2/thumbnail/480x/format/webp/interlace/1/quality/70";
             a.appendChild(img);
             var h2 = document.createElement("h2");
             h2.innerHTML = datas[i][0];
