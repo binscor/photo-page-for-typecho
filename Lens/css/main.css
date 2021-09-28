@@ -869,8 +869,8 @@ input, select, textarea {
 		}
 
 		body.is-preload-1 #main {
-			opacity: 0;
-			right: -2em;
+			opacity: 1;
+			/* right: -2em; */
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -879,9 +879,9 @@ input, select, textarea {
 				width: 19em;
 			}
 
-				body.fullscreen #main {
-					right: -19em;
-				}
+			body.fullscreen #main {
+				right: -19em;
+			}
 
 		}
 
@@ -1266,11 +1266,11 @@ input, select, textarea {
 			}
 
 		body.is-preload-1 #viewer {
-			opacity: 0;
+			opacity: 1;
 		}
 
 		body.is-preload-2 #viewer .slide {
-			opacity: 0;
+			opacity: 1;
 		}
 
 		@media screen and (max-width: 1280px) {
